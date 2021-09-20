@@ -1,3 +1,4 @@
+
 # Python package
 # Create and test a Python package on multiple Python versions.
 # Add steps that analyze code, save the dist with the build record, publish to a PyPI-compatible index, and more:
@@ -18,6 +19,7 @@ steps:
 
 - script: |
     python -m pip install --upgrade pip
+    pip install setup
     pip install -r requirements.txt
   displayName: 'Install dependencies'
 
